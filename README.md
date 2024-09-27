@@ -1,26 +1,35 @@
-[![CI](https://github.com/nogibjj/Nzarama_Kouadio_DE_Mini_Project1/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Nzarama_Kouadio_DE_Mini_Project1/actions/workflows/hello.yml)
+[![CI](https://github.com/nogibjj/Nzarama_Kouadio_DE_Mini_Project4/actions/workflows/actions.yml/badge.svg)](https://github.com/nogibjj/Nzarama_Kouadio_DE_Mini_Project4/actions/workflows/actions.yml)
 
 # Nzarama_Kouadio_DE_Mini_Project4
 Mini Project 4 for Data Engineering course DUKE MIDS
 
-# Purpose
+# Purpose of Project
 
-This python template is meant to give a basic structure for building a Python application. 
+This project uses GitHub Actions to run continuous integration (CI) tests on multiple Python versions and operating systems.
 
-# Explain the purpose of the code
-1. requirement.txt: this project uses several libraries all of which are listed in here. You can install these dependencies by running: pip install -r requirements.txt
+# To run these locally
 
-2. MAKEFILE: helps to simplify common development tasks
+1. Install dependencies
+2. Run format check,lint check and run tests
 
-3. devcontainer: this folder contains files to set up a specific development environment and make sure that everyone working on the project has the same tools and environment. 
+# Github Actions Matrix strategy Proof
+The project is tested across multiple Python versions and operating systems using GitHub Actions. The matrix includes:
+- Python Versions: 3.8, 3.9, 3.11
+- Operating Systems: Ubuntu (latest), Windows (latest), macOS (latest)
 
-4. test_main: this file runs test cases to check if the add function in main.py works correctly using the conmmands in the Makefile 
+![Alt Text](matrix.png)
 
 
+# Check Format, lint and Test Errors
+- Format:
+![Alt Text](format.png)
 
-
+- Lint:
 ![Alt Text](lint.png)
 
+- Test:
 ![Alt Text](test.png)
 
-![Alt Text](format.png)
+# Reference 
+https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-python 
+
