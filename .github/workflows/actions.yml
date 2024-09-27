@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9, 3.11]  # Test across 4 different Python versions
+        os: [ubuntu-latest, windows-latest, macos-latest]    # Test on different operating systems: Ubuntu, Windows, macOS
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4               # Checkout the repository
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: make install                       # Use the 'install' step from Makefile
+      - name: Run linting
+        run: make lint                          # Use 'lint' from Makefile
+      - name: Run tests
+        run: make test                          # Use 'test' from Makefile
+      - name: Format code
+        run: make format                        # Use 'format' from Makefile

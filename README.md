@@ -1,7 +1,9 @@
 [![CI](https://github.com/nogibjj/Nzarama_Kouadio_DE_Mini_Project1/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Nzarama_Kouadio_DE_Mini_Project1/actions/workflows/hello.yml)
 
-# Nzarama_Kouadio_DE_Mini_Project1
-Mini Project 1 for Data Engineering course DUKE MIDS
+# Nzarama_Kouadio_DE_Mini_Project4
+Mini Project 4 for Data Engineering course DUKE MIDS
+
+# Purpose
 
 This python template is meant to give a basic structure for building a Python application. 
 
@@ -13,3 +15,12 @@ This python template is meant to give a basic structure for building a Python ap
 3. devcontainer: this folder contains files to set up a specific development environment and make sure that everyone working on the project has the same tools and environment. 
 
 4. test_main: this file runs test cases to check if the add function in main.py works correctly using the conmmands in the Makefile 
+
+
+
+
+![Alt Text](lint.png)
+
+![Alt Text](test.png)
+
+![Alt Text](format.png)
